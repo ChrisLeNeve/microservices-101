@@ -1,0 +1,11 @@
+
+# Don't register with Eureka, since this is the Eureka server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+
+# Let's give our Eureka server a good port. Famous people were born in 1994...
+server:
+  port: 1994

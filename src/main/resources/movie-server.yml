@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: movie-service
+
+# This registers our service to the Eureka server. That is what makes it a microservice.
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1994/eureka/
+
+# Tomcat server. Default is 8080, but in case several microservices using Tomcat register
+# to your Eureka server, they can't all be on that port.
+server:
+  port: 1234
